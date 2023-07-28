@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p>ID: <span th:int="${student.id}"></span></p>
+    <p>Name: <span th:text="${student.name}"></span></p>
+    <p>Email:<span th:text="${student.email}"></span></p>
+    <p>Phone Number: <span th:text="${student.phonenumber}"></span></p>
+    <p>Address: <span th:text="${student.address}"></span></p>
+    <p>Father Name: <span th:text="${student.fathername}"></span></p>
+    <p>Fees: <span th:text="${student.fees}"></span></p>
+    <p>Age: <span th:text="${student.age}"></span></p>
+    
+    <a th:href="@{/students}">Back to List</a>
+</body>
+</html>
